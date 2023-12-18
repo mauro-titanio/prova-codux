@@ -1,8 +1,4 @@
-$spacing-1: 1rem;
-$spacing-2: 2rem;
-$spacing-3: 3rem;
-$spacing-4: 4rem;
-$spacing-5: 5rem;
+@import './varialbles.scss';
 
 
 
@@ -12,7 +8,7 @@ $spacing-5: 5rem;
     font-stretch: extra-condensed;
     display: inline-block;
     padding: 3px 6px;
-    min-width: 4rem;
+    min-width: $spacing-5;
     background-color: transparent;
     background-image: linear-gradient(151deg, #05111C 0%, #1966ff 78%, rgba(255, 255, 255, 0) 100%);
     background-position: 0% 0%;
@@ -37,11 +33,12 @@ $spacing-5: 5rem;
     padding-left: $spacing-2;
     line-height:2rem;
     border-radius: $spacing-4;
+    margin-bottom: $spacing-1;
 }
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: grid;
     align-items: center;
     justify-items: center;
