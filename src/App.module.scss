@@ -1,51 +1,49 @@
-.App {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+$spacing-1: 1rem;
+$spacing-2: 2rem;
+$spacing-3: 3rem;
+$spacing-4: 4rem;
+$spacing-5: 5rem;
+
+
+
+.button {
+    font-weight: 500;
+    font-variant: all-small-caps;
+    font-stretch: extra-condensed;
+    display: inline-block;
+    padding: 3px 6px;
+    min-width: 4rem;
+    background-color: transparent;
+    background-image: linear-gradient(151deg, #05111C 0%, #1966ff 78%, rgba(255, 255, 255, 0) 100%);
+    background-position: 0% 0%;
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    cursor: pointer;
+    color: #FFFFFF;
+    outline: none;
+    opacity: 1;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    border:1px solid #FFFFFF;
+
+    font-size:1.25rem;
+    padding-right: $spacing-2;
+    padding-left: $spacing-2;
+    line-height:2rem;
+    border-radius: $spacing-4;
 }
 
-.logo {
-  padding: 1.25em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.logo.ts:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.logo.scss:hover {
-  filter: drop-shadow(0 0 2em #cc6698aa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
 }
